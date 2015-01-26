@@ -40,6 +40,9 @@ class websvn (
  $remoterepo = undef
 )  {
 
+if ! defined (Class['apache']) { class { 'apache': } }
+if ! defined (Class['apache::mod::php']) { class { 'apache::mod::php': } }
+
   apache::custom_config { 'websvn':
     content => "
 Alias /websvn /usr/share/websvn/
