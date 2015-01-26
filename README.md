@@ -1,7 +1,7 @@
 # websvn
 A puppet module for websvn
 
-Assumes apache is managed on the node using puppetlabs-apache...
+Depends on te Puppetlabs apache module.
 
 Needs a lot of work
 
