@@ -1,9 +1,9 @@
 # websvn
 A puppet module for websvn
 
-Depends on te Puppetlabs apache module.
+Depends on the Puppetlabs apache module.
 
-Needs a lot of work
+Needs a lot of work, but tested on RHEL6.
 
 Example:
 class { 'websvn': 
