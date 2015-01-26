@@ -62,7 +62,7 @@ Alias /websvn /usr/share/websvn/
     mode => '0644',
     owner => 'root',
     group => 'root',
-    require => Packge['websvn']
+    require => Package['websvn']
   }
 
 }
