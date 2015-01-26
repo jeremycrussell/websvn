@@ -1,0 +1,14 @@
+{
+  "name": "jeremycrussell-websvn",
+  "version": "0.1.0",
+  "author": "jeremycrussell",
+  "summary": null,
+  "license": "Apache 2.0",
+  "source": "https://github.com/jeremycrussell/websvn.git",
+  "issues_url": "https://github.com/jeremycrussell/websvn/issues",
+  "project_page": "https://github.com/jeremycrussell/websvn",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
