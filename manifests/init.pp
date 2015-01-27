@@ -43,8 +43,10 @@ class websvn (
 if ! defined (Class['apache']) { class { 'apache': } }
 if ! defined (Class['apache::mod::php']) { class { 'apache::mod::php': } }
 
-  apache::custom_config { 'websvn':
-    content => "
+apache::vhost { $fqdn:
+  port => '80',
+  priority => '10',
+  custom_fragment => "
 Alias /websvn /usr/share/websvn/
 
 <Directory /usr/share/websvn/>
@@ -53,7 +55,7 @@ Alias /websvn /usr/share/websvn/
   Order Allow,Deny
   Allow from all
 </Directory>",
-  }
+ }
 
   package { 'websvn':
     ensure => 'latest'
