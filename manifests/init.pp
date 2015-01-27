@@ -45,6 +45,7 @@ if ! defined (Class['apache::mod::php']) { class { 'apache::mod::php': } }
 
 apache::vhost { $fqdn:
   port => '80',
+  docroot => '/var/www/html',
   priority => '10',
   custom_fragment => "
 Alias /websvn /usr/share/websvn/
